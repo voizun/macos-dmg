@@ -1,0 +1,10 @@
+on:
+  workflow_dispatch:
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Use the inputs
+        run: |
